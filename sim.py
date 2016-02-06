@@ -38,11 +38,10 @@ Network Topology:
 
 if len(sys.argv < 2):
     print "Error: Too few arguemtns"
-    print "Usage: python <filename> <datarate in Mbps>"
-    print "eg: python ns_sim.py 5"
+    print "Usage: python sim.py <datarate in Mbps>"
+    print "eg: python sim.py 5"
     sys.exit(2)
-
-
+    
 # set random seed
 ns.core.RngSeedManager.SetSeed(int(time.time() * 1000 % (2**31)))
 
